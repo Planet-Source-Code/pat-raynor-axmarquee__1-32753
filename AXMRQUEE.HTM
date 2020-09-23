@@ -1,0 +1,96 @@
+<HTML>
+<HEAD>
+<TITLE>AXMarquee Control Test Page</TITLE>
+</HEAD>
+<BODY>
+ActiveX Marquee Control Test Page
+<P>
+<OBJECT ID="Marquee1" WIDTH=320 HEIGHT=47
+  CLASSID="CLSID:73E5D09B-2767-11D0-9CB4-444553540000">
+    <PARAM NAME="_ExtentX" VALUE="8467">
+    <PARAM NAME="_ExtentY" VALUE="1217">
+</OBJECT>
+<P>
+<P>
+Message: 
+<OBJECT ID="TextBox1" WIDTH=160 HEIGHT=24
+ CLASSID="CLSID:8BD21D10-EC42-11CE-9E0D-00AA006002F3">
+    <PARAM NAME="VariousPropertyBits" VALUE="746604571">
+    <PARAM NAME="Size" VALUE="4233;635">
+    <PARAM NAME="FontCharSet" VALUE="0">
+    <PARAM NAME="FontPitchAndFamily" VALUE="2">
+    <PARAM NAME="FontWeight" VALUE="0">
+</OBJECT>
+<P>
+<P>
+    <SCRIPT LANGUAGE="VBScript">
+<!--
+Sub cmdStart_Click()
+Marquee1.Text = TextBox1.Text
+Marquee1.Enabled = True
+end sub
+
+Sub cmdStop_Click()
+Marquee1.Enabled = False
+end sub
+
+-->
+    </SCRIPT>
+    <OBJECT ID="cmdStart" WIDTH=120 HEIGHT=40 <OBJECT
+     CLASSID="CLSID:D7053240-CE69-11CD-A777-00DD01143C57">
+        <PARAM NAME="Caption" VALUE="Start">
+        <PARAM NAME="Size" VALUE="2540;847">
+        <PARAM NAME="FontCharSet" VALUE="0">
+        <PARAM NAME="FontPitchAndFamily" VALUE="2">
+        <PARAM NAME="ParagraphAlign" VALUE="3">
+    </OBJECT>
+    <OBJECT ID="cmdStop" WIDTH=120 HEIGHT=40
+     CLASSID="CLSID:D7053240-CE69-11CD-A777-00DD01143C57">
+        <PARAM NAME="Caption" VALUE="Stop">
+        <PARAM NAME="Size" VALUE="2540;846">
+        <PARAM NAME="FontCharSet" VALUE="0">
+        <PARAM NAME="FontPitchAndFamily" VALUE="2">
+        <PARAM NAME="ParagraphAlign" VALUE="3">
+    </OBJECT>
+<P>
+    <SCRIPT LANGUAGE="VBScript">
+<!--
+Sub optScrollRtoL_Change()
+Marquee1.ScrollMode = 0
+optScrollLtoR.Value = False
+end sub
+-->
+    </SCRIPT>
+    <OBJECT ID="optScrollRtoL" WIDTH=180 HEIGHT=30
+     CLASSID="CLSID:8BD21D50-EC42-11CE-9E0D-00AA006002F3">
+        <PARAM NAME="BackColor" VALUE="2147483663">
+        <PARAM NAME="ForeColor" VALUE="2147483666">
+        <PARAM NAME="DisplayStyle" VALUE="5">
+        <PARAM NAME="Size" VALUE="3810;635">
+        <PARAM NAME="Value" VALUE="True">
+        <PARAM NAME="Caption" VALUE="Scroll Right to Left">
+        <PARAM NAME="FontCharSet" VALUE="0">
+        <PARAM NAME="FontPitchAndFamily" VALUE="2">
+    </OBJECT>
+<P>
+    <SCRIPT LANGUAGE="VBScript">
+<!--
+Sub optScrollLtoR_Change()
+Marquee1.ScrollMode = 1
+optScrollRtoL.Value = False
+end sub
+-->
+    </SCRIPT>
+    <OBJECT ID="optScrollLtoR" WIDTH=180 HEIGHT=30
+     CLASSID="CLSID:8BD21D50-EC42-11CE-9E0D-00AA006002F3">
+        <PARAM NAME="BackColor" VALUE="2147483663">
+        <PARAM NAME="ForeColor" VALUE="2147483666">
+        <PARAM NAME="DisplayStyle" VALUE="5">
+        <PARAM NAME="Size" VALUE="3810;635">
+        <PARAM NAME="Value" VALUE="False">
+        <PARAM NAME="Caption" VALUE="Scroll Left to Right">
+        <PARAM NAME="FontCharSet" VALUE="0">
+        <PARAM NAME="FontPitchAndFamily" VALUE="2">
+    </OBJECT>
+</BODY>
+</HTML>
